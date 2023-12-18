@@ -20,6 +20,8 @@ const fetchData = (apiUrl) => {
 
 const renderUI = () => {
   fetchData("https://jsonplaceholder.typicode.com/posts");
+  toggleButton(postsButton);
+  changeType(postsButton);
 };
 
 postsButton.addEventListener("click", () => {
